@@ -2,14 +2,10 @@
 
 void main()
 {
-    int a;
-    int *p;
-    p = &a;
-    a = 5;
-    printf("p = %d\n", p);  // 204
-    printf("addr(a) = %d\n", &a); // 204
-    printf("addr(p) = %d\n", &p); // 64
-    printf("(*p) = %d\n", *p); // 5
+    int a = 5;
+    int *p = &a;
+    printf("&p = %p, p = %p, *p = %d\n", &p, p, *p);  // 204
+    printf("&a = %p, a = %d\n", &a, a);  // 204
     *p = 8;
-    printf("a = %d\n", a); // 8
+    printf("&a = %p, a = %d\n", &a, a);  // 204
 }

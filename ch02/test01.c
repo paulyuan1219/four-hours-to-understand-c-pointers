@@ -5,6 +5,6 @@ void main()
     int a = 10;
     int *p = &a;
     // Pointer arithmetic
-    printf("%d\n", p);    // 204
-    printf("%d\n", p + 1); // 208
+    printf("%p\n", p);    // 204
+    printf("%p\n", p + 1); // 208
 }

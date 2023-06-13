@@ -3,7 +3,7 @@ int SumOfElement(int A[])
 {
     int i, sum = 0;
     int size = sizeof(A) / sizeof(A[0]);
-    printf("%u, %u, %u\n", sizeof(A), sizeof(A[0]), size);
+    printf("%lu, %lu, %d\n", sizeof(A), sizeof(A[0]), size);
     for (i = 0; i < size; i++)
     {
         sum += A[i];
@@ -13,10 +13,10 @@ int SumOfElement(int A[])
 int main()
 {
     int A[] = {1, 2, 3, 4, 5};
-    printf("%u, %u\n", sizeof(A), sizeof(A[0]));
+    printf("%lu, %lu\n", sizeof(A), sizeof(A[0]));
     int total = SumOfElement(A);
     printf("%d\n", total);
-    printf("%d\n", sizeof(int *));
+    printf("%lu\n", sizeof(int *));
 }
 
 /*
